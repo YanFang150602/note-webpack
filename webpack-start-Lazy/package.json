@@ -1,0 +1,33 @@
+{
+  "name": "CodeSplit",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "depend": "webpack --config webpack.config.dependOn.js",
+    "split": "webpack --config webpack.config.splitChunk.js",
+    "dynamic": "webpack --config webpack.config.dynamicImport.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "7.4.4",
+    "@babel/core": "7.4.5",
+    "@babel/plugin-proposal-class-properties": "7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/plugin-transform-runtime": "7.4.4",
+    "@babel/preset-env": "7.4.5",
+    "@babel/preset-react": "7.0.0",
+    "babel-loader": "8.0.6",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "@nce/eview-react": "3.4.28",
+    "lodash": "^4.17.21"
+  }
+}
